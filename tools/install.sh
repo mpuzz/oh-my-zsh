@@ -105,7 +105,7 @@ setup_ohmyzsh() {
 		-c fsck.zeroPaddedFilemode=ignore \
 		-c fetch.fsck.zeroPaddedFilemode=ignore \
 		-c receive.fsck.zeroPaddedFilemode=ignore \
-		--depth=1 --branch "$BRANCH" "$REMOTE" "$ZSH" || {
+		--depth=1 --branch dario https://github.com/mpuzz/oh-my-zsh.git "$ZSH" || {
 		error "git clone of oh-my-zsh repo failed"
 		exit 1
 	}
